@@ -1,0 +1,20 @@
+
+
+server:
+  port: 8083
+    
+# Oracle #
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: CASOLIBROS
+    password: 123456
+    driverClassName: oracle.jdbc.OracleDriver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
